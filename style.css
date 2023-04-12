@@ -24,7 +24,11 @@ ul.navbar {
     list-style-type: none;
     padding-left: 0;
     margin: 20px 0 0 0;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.logo {
+    margin-right: auto;
 }
 
 a {
@@ -32,12 +36,32 @@ a {
     color: #ffffff;
 }
 
-img {
-    height: 250px;
+li {
+    padding-left: 20px;
+}
+
+.mainpic {
+    height: 230px;
+    margin-left: 15px;
 }
 
 .vizitkarte {
     display: flex;
-    margin: 140px 0px 140px 0px;
+    margin: 100px 0px 100px 0px;
     justify-content: space-between;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 230px;
+}
+
+#first {
+    align-self: flex-start;
+}
+
+h1 {
+    margin: 0px;
 }
