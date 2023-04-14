@@ -2,6 +2,8 @@
     font-family: 'Courier Prime', monospace;
 }
 
+/* Stils Headerim */
+
 body {
     display: flex;
     flex-direction: column;
@@ -12,56 +14,161 @@ body {
 .header {
     display: flex;
     flex-direction: column;
+    flex: 1 0 500px;
     background-color: #1f2937;
-    color: #ffffff;
     padding-left: 10%;
     padding-right: 10%;
-    height: 500px;
 }
 
-ul.navbar {
+.navbar {
     display: flex;
     list-style-type: none;
     padding-left: 0;
-    margin: 20px 0 0 0;
-    justify-content: flex-start;
+    margin-bottom: 0;
+    gap: 100px;
+    justify-content: space-between;
 }
 
 .logo {
     margin-right: auto;
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: #e9e9e9;
 }
 
+a:hover {
+    font-weight: bold;
+}
+
+.secondary,
 li {
-    padding-left: 20px;
-}
-
-.mainpic {
-    height: 230px;
-    margin-left: 15px;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .vizitkarte {
     display: flex;
+    flex-direction: row-reverse;
     margin: 100px 0px 100px 0px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-height: 230px;
+    align-items: flex-start;
+    flex: 1 1 350px;
 }
 
-#first {
-    align-self: flex-start;
-}
-
-h1 {
+.hero {
     margin: 0px;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+.mainpic {
+    display: flex;
+    height: 230px;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 1 350px;
+}
+
+/* Stils otrajai sadaļai: Galerijai */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 500px;
+    background-color: #F9FAF8;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    margin: 35px 0px 35px 0px;
+    text-align: center;
+}
+
+.cardholder {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    row-gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 200px;
+}
+
+.card > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #3882f6;
+}
+
+.card-description {
+    text-align: center;
+}
+
+/* Stils maziem ekrāniem */
+
+@media (max-width: 874px) {
+
+    /* Header */
+
+    .navbar {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .logo {
+        padding-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .vizitkarte {
+        margin: 0;
+    }
+
+    .mainpic {
+        height: 200px;
+        justify-content: center;
+    }
+
+    .about {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    button.about {
+        align-self: center;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .secondary {
+        text-align: center;
+    }
+
 }
