@@ -2,7 +2,11 @@
     font-family: 'Courier Prime', monospace;
 }
 
-/* Stils Headerim */
+/* Header */
+
+html {
+    min-width: 565px;
+}
 
 body {
     display: flex;
@@ -90,7 +94,21 @@ li {
     height: 230px;
 }
 
-/* Stils otrajai sadaļai: Galerijai */
+#first-button {
+    border: 2px solid #82c7ff;
+    border-radius: 8px;
+    background-color: #448bfc;
+    color: #ffffff;
+    padding: 8px 16px 6px 16px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+#first-button:hover {
+    background-color: #5f9cff;
+}
+
+/* Gallery */
 
 .gallery {
     display: flex;
@@ -169,6 +187,72 @@ li {
     margin-top: 8px;
 }
 
+/* Signup section */
+
+.signup {
+    display: flex;
+    flex: 1 0 350px;
+    background-color: #ffffff;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-background {
+    display: flex;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #ffffff;
+    gap: 150px;
+}
+
+.button-container {
+    align-self: center;
+}
+
+.button-description > p {
+    margin-top: 0px;
+}
+
+.button-description > h3 {
+    margin-bottom: 0px;
+}
+
+#second-button {
+    border: 2px solid #82c7ff;
+    border-radius: 8px;
+    background-color: #448bfc;
+    color: #ffffff;
+    padding: 8px 16px 6px 16px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+#second-button:hover {
+    background-color: #5f9cff;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex: 1 0 100px;
+    background-color: #1f2937;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > p {
+    color: #ffffff;
+}
+
+
+
 /* Stils maziem ekrāniem */
 
 @media (max-width: 1080px) {
@@ -183,13 +267,13 @@ li {
     }
     
     .logo {
-        padding-bottom: 10px;
+        padding-bottom: 0px;
         margin-right: 0;
     }
 
     .vizitkarte {
         flex-wrap: wrap;
-        margin: 0;
+        margin: 10px 0px 0px 0px;
     }
 
     .mainpic {
@@ -211,6 +295,10 @@ li {
         align-self: center;
     }
 
+    p.secondary {
+        margin-top: 10px;
+    }
+
     .hero {
         text-align: center;
     }
@@ -219,4 +307,24 @@ li {
         text-align: center;
     }
 
+    #first {
+        margin-bottom: 16px;
+    }
+
+    /* Sign-up container */
+
+    .sign-up-background {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    #h3-centered,
+    #p-centered {
+        text-align: center;
+    }
+
+    #h3-centered {
+        margin-top: 0px;
+    }
 }
