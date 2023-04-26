@@ -17,12 +17,18 @@ body {
 
 .header {
     display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+}
+
+.header-content {
+    display: flex;
     flex-direction: column;
     flex: 1 0 500px;
     background-color: #1f2937;
     padding-left: 10%;
     padding-right: 10%;
-    flex-basis: 1600px;
+    max-width: 1500px;
 }
 
 .navbar {
@@ -160,6 +166,12 @@ li {
 
 .quote {
     display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+.quote-content {
+    display: flex;
     flex-direction: column;
     flex: 1 0 500px;
     background-color: #E5E7EB;
@@ -167,6 +179,7 @@ li {
     padding-right: 20%;
     align-items: center;
     justify-content: center;
+    max-width: 1550px;
 }
 
 .wisewords > p {
