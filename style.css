@@ -22,7 +22,7 @@ body {
     background-color: #1f2937;
     padding-left: 10%;
     padding-right: 10%;
-    max-width: 1600px;
+    flex-basis: 1600px;
 }
 
 .navbar {
